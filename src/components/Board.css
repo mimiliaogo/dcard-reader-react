@@ -1,0 +1,9 @@
+.board {
+    margin: 0 auto;
+    width: 60%;
+    background-color: #ffffffff;
+    height: 100%;
+    overflow-y: scroll;
+    min-width: 500px;
+    padding: 0 2rem;
+}
