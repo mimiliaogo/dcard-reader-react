@@ -2,6 +2,8 @@ import React from 'react';
 import BoardCard from 'components/BoardCard.jsx'
 import {getDcardPostList} from 'api/dcard-post.js'
 
+
+  
 import './Board.css'
 export default class Board extends React.Component {
     constructor(props) {
@@ -23,10 +25,15 @@ export default class Board extends React.Component {
         const BoardCardArr = [];
         for (let i=0; i<this.state.titleArr.length; i++) {
             const el =  <BoardCard key={this.state.idArr[i]} title={this.state.titleArr[i]} excerpt={this.state.excerptArr[i]}/> ;
-            BoardCardArr.push(el);
+            BoardCardArr.push(el);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
         }
         return (
-            <div className={`board`} onScroll={this.handleLoad} >{BoardCardArr}</div>            
+            
+            <div className={`board`} onScroll={this.handleLoad} >                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       
+                
+                {BoardCardArr}
+            </div>   
+          
         );
     }
 
@@ -75,8 +82,8 @@ export default class Board extends React.Component {
                 lastPostId: id_tmp[29]
             }));
 
-            console.log(this.state.titleArr.length);
-            console.log(this.state.lastPostId);
+            // console.log(this.state.titleArr.length);
+            // console.log(this.state.lastPostId);
         });
 
         

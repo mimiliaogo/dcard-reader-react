@@ -52,6 +52,6 @@ module.exports = {
     devServer: {
         contentBase: distPath,
         compress: true,
-        port: 7070
+        port: 8080
     }
 };
